@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Client"
   ],
-  "SelectedNode": "\\BlazorStatic.sln",
+  "SelectedNode": "\\Client\\BlazorStatic.sln",
   "PreviewInSolutionExplorer": false
 }
