@@ -1,0 +1,41 @@
+﻿@inherits LayoutComponentBase
+
+<div class="page">
+    <div class="sidebar">
+        <NavMenu />
+    </div>
+
+    <div class="main">
+        <div class="top-row px-4 auth">
+
+            <button type="button" class="btn btn-link ml-md-auto" @onclick="@LogoutClick">Logout</button>
+
+            <a href="https://docs.microsoft.com/aspnet/" target="_blank">About</a>
+        </div>
+
+        <div class="content px-4">
+            @Body
+        </div>
+    </div>
+</div>
+
+@code{
+    [CascadingParameter] Task<AuthenticationState> AuthenticationState { get; set; }
+
+    [Inject] NavigationManager navigationManager { get; set; }
+
+    [Inject] CustomStateProvider authStateProvider { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (!(await AuthenticationState).User.Identity.IsAuthenticated)
+        {
+            navigationManager.NavigateTo("/login");
+        }
+    }
+    async Task LogoutClick()
+    {
+        await authStateProvider.Logout();
+        navigationManager.NavigateTo("/login");
+    }
+}

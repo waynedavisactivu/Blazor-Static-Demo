@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Blazor.Api": {
+      "commandName": "Project"
+    }
+  }
+}

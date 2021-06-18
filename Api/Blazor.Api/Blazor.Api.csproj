@@ -1,7 +1,10 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <AzureFunctionsVersion>v3</AzureFunctionsVersion>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
   </PropertyGroup>
   
   <ItemGroup>
@@ -14,6 +17,9 @@
     <ProjectReference Include="..\..\Libraries\BlazorStatic.Shared\BlazorStatic.Shared.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <None Update="blazor_wasm_cert.pfx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

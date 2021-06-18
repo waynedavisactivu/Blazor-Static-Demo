@@ -11,8 +11,16 @@ namespace Blazor.Api
     {
         public static void Main()
         {
-            var host = new HostBuilder()
-                .ConfigureFunctionsWorkerDefaults()
+            var host = new HostBuilder()              
+                .ConfigureHostConfiguration(config => 
+                {
+                    
+                })
+                .ConfigureFunctionsWorkerDefaults(o => 
+                {
+                    o.UseFunctionExecutionMiddleware();
+                    
+                })
                 .ConfigureServices(services => 
                 {
                     services.AddHttpClient();
@@ -31,7 +39,7 @@ namespace Blazor.Api
                         .AddIdentityServerJwt();
                 })
                 .Build();
-
+           
             host.Run();
         }
     }
