@@ -1,6 +1,4 @@
-﻿using Activu.Azure.ServiceBus;
-using Microsoft.Azure.ServiceBus;
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 using System.Text.Json;
@@ -8,7 +6,7 @@ using System.Text.Json.Serialization;
 
 namespace BlazorStatic.Shared.Messages
 {
-    public class AlertMessage : MessageBase
+    public class AlertMessage
     {        
         [Required(ErrorMessage = "Message body required")]
         [JsonPropertyName("message")]
@@ -29,12 +27,6 @@ namespace BlazorStatic.Shared.Messages
         public string ConnectionId { get; set; }
 
         [JsonPropertyName("userName")]
-        public string UserName { get; set; }
-
-        public override Message Serialize()
-        {
-            Created = DateTime.Now;
-            return new Message(Encoding.UTF8.GetBytes(JsonSerializer.Serialize(this)));
-        }
+        public string UserName { get; set; }        
     }
 }

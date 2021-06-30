@@ -1,8 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Client"
+    "\\Api",
+    "\\Api\\Blazor.Api",
+    "\\Api\\Blazor.Api\\Functions",
+    "\\Client",
+    "\\Libraries",
+    "\\Libraries\\BlazorStatic.Shared",
+    "\\Libraries\\BlazorStatic.Shared\\Data",
+    "\\Libraries\\BlazorStatic.Shared\\Models"
   ],
-  "SelectedNode": "\\Client\\BlazorStatic.sln",
+  "SelectedNode": "\\Api\\Blazor.Api\\Functions\\Login.cs",
   "PreviewInSolutionExplorer": false
 }

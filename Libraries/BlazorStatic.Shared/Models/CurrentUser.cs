@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Blazor.Api
+namespace BlazorStatic.Shared
 {
     public class CurrentUser
     {

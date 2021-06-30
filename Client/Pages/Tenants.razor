@@ -1,0 +1,37 @@
+﻿@page "/tenants"
+
+<button class="btn-outline-danger" @onclick="HandleTenants">Get Tenants</button>
+
+<h3>Tenant List: </h3>
+<ul style="list-style:circle">
+    @foreach (var item in TenantList)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
+
+@code{
+
+    [Inject] HttpClient Client { get; set; }
+
+    IList<Tenant> TenantList = new List<Tenant>();
+
+    async Task HandleTenants()
+    {
+        try
+        {
+            var data = await Client.GetFromJsonAsync<IEnumerable<Tenant>>("api/tenants");
+
+            if (data != null)
+            {
+                TenantList = data.ToList();
+            }
+
+            await InvokeAsync(StateHasChanged);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+}

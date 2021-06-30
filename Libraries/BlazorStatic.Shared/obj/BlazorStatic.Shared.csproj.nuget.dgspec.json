@@ -1,39 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wdavis.SOFTWARE\\source\\repos\\Activu\\Clients\\Web\\BlazorStatic\\Blazor-Static-Demo\\Libraries\\BlazorStatic.Shared\\BlazorStatic.Shared.csproj": {}
+    "C:\\Users\\Wayne\\Source\\Repos\\waynedavisactivu\\Blazor-Static-Demo\\Libraries\\BlazorStatic.Shared\\BlazorStatic.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wdavis.SOFTWARE\\source\\repos\\Activu\\Clients\\Web\\BlazorStatic\\Blazor-Static-Demo\\Libraries\\BlazorStatic.Shared\\BlazorStatic.Shared.csproj": {
+    "C:\\Users\\Wayne\\Source\\Repos\\waynedavisactivu\\Blazor-Static-Demo\\Libraries\\BlazorStatic.Shared\\BlazorStatic.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wdavis.SOFTWARE\\source\\repos\\Activu\\Clients\\Web\\BlazorStatic\\Blazor-Static-Demo\\Libraries\\BlazorStatic.Shared\\BlazorStatic.Shared.csproj",
+        "projectUniqueName": "C:\\Users\\Wayne\\Source\\Repos\\waynedavisactivu\\Blazor-Static-Demo\\Libraries\\BlazorStatic.Shared\\BlazorStatic.Shared.csproj",
         "projectName": "BlazorStatic.Shared",
-        "projectPath": "C:\\Users\\wdavis.SOFTWARE\\source\\repos\\Activu\\Clients\\Web\\BlazorStatic\\Blazor-Static-Demo\\Libraries\\BlazorStatic.Shared\\BlazorStatic.Shared.csproj",
-        "packagesPath": "C:\\Users\\wdavis.SOFTWARE\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wdavis.SOFTWARE\\source\\repos\\Activu\\Clients\\Web\\BlazorStatic\\Blazor-Static-Demo\\Libraries\\BlazorStatic.Shared\\obj\\",
+        "projectPath": "C:\\Users\\Wayne\\Source\\Repos\\waynedavisactivu\\Blazor-Static-Demo\\Libraries\\BlazorStatic.Shared\\BlazorStatic.Shared.csproj",
+        "packagesPath": "C:\\Users\\Wayne\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Wayne\\Source\\Repos\\waynedavisactivu\\Blazor-Static-Demo\\Libraries\\BlazorStatic.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\wdavis.SOFTWARE\\NuGet.Config",
-          "C:\\Users\\wdavis.SOFTWARE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Wayne\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "netstandard2.0"
         ],
         "sources": {
-          "https://aka.ms/maui-preview/index.json": {},
+          "L:\\Nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
             "projectReferences": {}
           }
         },
@@ -44,36 +43,26 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "dependencies": {
-            "ActivuCloud.Azure.ServiceBus.Models": {
+            "IdentityModel": {
               "target": "Package",
-              "version": "[1.0.2, )"
+              "version": "[5.1.0, )"
             },
-            "Microsoft.AspNetCore.ApiAuthorization.IdentityServer": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[2.0.3, )",
+              "autoReferenced": true
             },
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "System.ComponentModel.Annotations": {
               "target": "Package",
-              "version": "[3.1.1, )"
+              "version": "[5.0.0, )"
             },
-            "Microsoft.AspNetCore.SignalR.Core": {
+            "System.Net.Http.Json": {
               "target": "Package",
-              "version": "[1.1.0, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[3.1.1, )"
-            },
-            "Microsoft.Extensions.Identity.Core": {
-              "target": "Package",
-              "version": "[3.1.10, )"
-            },
-            "System.Drawing.Common": {
-              "target": "Package",
-              "version": "[5.0.2, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -86,12 +75,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.4.21255.9\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100-preview.5.21302.13\\RuntimeIdentifierGraph.json"
         }
       }
     }

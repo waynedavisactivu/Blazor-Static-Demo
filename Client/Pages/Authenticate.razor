@@ -1,0 +1,38 @@
+﻿@page "/authenticate"
+
+<div>
+    @if (Response != null)
+    {
+        <div>Bearer Token Response: @Response.AccessToken</div>
+    }
+</div>
+
+<button class="btn-outline-danger" @onclick="HandleAuthenticate">Authenticate</button>
+
+@code{
+
+    [Inject] HttpClient Client { get; set; }
+
+    IList<Tenant> Tenants = new List<Tenant>();
+
+    BearerTokenResponse Response;
+
+    async Task HandleAuthenticate()
+    {
+        try
+        {
+            var data = await Client.GetFromJsonAsync<BearerTokenResponse>("api/authenticate");
+
+            if (data != null)
+            {
+                Response = data;
+            }
+
+            await InvokeAsync(StateHasChanged);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+}

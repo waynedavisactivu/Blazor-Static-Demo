@@ -1,27 +1,25 @@
-﻿using BlazorStatic.Shared.Models;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.Azure.Functions.Worker;
+﻿using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using System.Net;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace Blazor.Api
 {
-    public class Logout
+    public class Register
     {
-        readonly SignInManager<ApplicationUser> signInManager;
+        readonly HttpClient Client;
 
-        public Logout(SignInManager<ApplicationUser> signInManager)
+        public Register(IHttpClientFactory Factory)
         {
-            this.signInManager = signInManager;
+            Client = Factory.CreateClient("UserClient");
         }
 
-        [Function("Logout")]
+        [Function("Register")]
         public async Task<HttpResponseData> Run([HttpTrigger(AuthorizationLevel.Function, "post")] HttpRequestData req, FunctionContext executionContext)
         {
-            await signInManager.SignOutAsync();
-
             var response = req.CreateResponse(HttpStatusCode.OK);
+
 
             return response;
         }

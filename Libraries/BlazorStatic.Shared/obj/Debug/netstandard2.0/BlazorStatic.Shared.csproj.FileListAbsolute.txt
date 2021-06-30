@@ -1,0 +1,9 @@
+C:\Users\Wayne\Source\Repos\waynedavisactivu\Blazor-Static-Demo\Libraries\BlazorStatic.Shared\obj\Debug\netstandard2.0\BlazorStatic.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wayne\Source\Repos\waynedavisactivu\Blazor-Static-Demo\Libraries\BlazorStatic.Shared\obj\Debug\netstandard2.0\BlazorStatic.Shared.AssemblyInfoInputs.cache
+C:\Users\Wayne\Source\Repos\waynedavisactivu\Blazor-Static-Demo\Libraries\BlazorStatic.Shared\obj\Debug\netstandard2.0\BlazorStatic.Shared.AssemblyInfo.cs
+C:\Users\Wayne\Source\Repos\waynedavisactivu\Blazor-Static-Demo\Libraries\BlazorStatic.Shared\obj\Debug\netstandard2.0\BlazorStatic.Shared.csproj.CoreCompileInputs.cache
+C:\Users\Wayne\Source\Repos\waynedavisactivu\Blazor-Static-Demo\Libraries\BlazorStatic.Shared\bin\Debug\netstandard2.0\BlazorStatic.Shared.deps.json
+C:\Users\Wayne\Source\Repos\waynedavisactivu\Blazor-Static-Demo\Libraries\BlazorStatic.Shared\bin\Debug\netstandard2.0\BlazorStatic.Shared.dll
+C:\Users\Wayne\Source\Repos\waynedavisactivu\Blazor-Static-Demo\Libraries\BlazorStatic.Shared\bin\Debug\netstandard2.0\BlazorStatic.Shared.pdb
+C:\Users\Wayne\Source\Repos\waynedavisactivu\Blazor-Static-Demo\Libraries\BlazorStatic.Shared\obj\Debug\netstandard2.0\BlazorStatic.Shared.dll
+C:\Users\Wayne\Source\Repos\waynedavisactivu\Blazor-Static-Demo\Libraries\BlazorStatic.Shared\obj\Debug\netstandard2.0\BlazorStatic.Shared.pdb

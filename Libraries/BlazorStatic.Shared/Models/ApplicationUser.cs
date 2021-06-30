@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Identity;
-
-namespace BlazorStatic.Shared.Models
+﻿namespace BlazorStatic.Shared.Models
 {
-    public class ApplicationUser : IdentityUser
+    public class ApplicationUser
     {
     }
 }
