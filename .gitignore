@@ -3,3 +3,6 @@
 ################################################################################
 
 /Api/Blazor.Api/obj
+/Api/Blazor.Api/bin/Debug/net5.0
+/Api/Blazor.Api/Properties
+/Api/Blazor.Api/.vs/Blazor.Api
